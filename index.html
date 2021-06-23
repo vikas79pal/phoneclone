@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href='https://css.gg/dialpad.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="phone.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+    <!-- <button><i class="far fa-id-badge" style="width: 50px"></i></button> -->
+    
+    <div id="wholepage">
+
+        <!-- phone app  -->
+        <div id="contactpg">
+            
+            <!-- phone contact setting icon -->
+            <div class="nav">
+                <button id="recentcalls"> <i class="fas fa-phone-alt" style="color: #b59e9e;"></i> </button>
+                <button id="contact"><i class="far fa-id-badge" style="color: #b59e9e;"></i></button>
+                <button id="setting"><i class="fas fa-cog" style="color: #b59e9e;"></i></button>
+            </div>
+            <!-- search  -->
+            <div id="contactsearch">
+                
+                <button id='contactbtn'><i class="fas fa-search" style="color:rgb(206, 198, 198);"></i> <input
+                    type="text" id='peoplesearch' value="" placeholder="0 contacts"> <i id='cross'
+                    class="far fa-times-circle fa-lg" style="color:rgb(206, 198, 198);"></i></button>
+                    
+                </div>
+                <div id="contactpgsearch">
+                    <button id='contactpgbtn'><i class="fas fa-search" style="color:rgb(206, 198, 198); width: 20px;float: left;padding-top: 7px;padding-left: 2px;"></i> <input
+                        type="text" id='contact1search' value="" placeholder="0 contacts" > <i id='cross1'
+                        class="far fa-times-circle fa-lg " style="color:rgb(206, 198, 198);width: 20px;float: right;top: 0px; margin-top: 8px;margin-right: 3px;"></i></button>
+                    </div>
+                
+                
+                    
+                    <!-- contact list page -->
+                    <div id="contactlist">
+                    <ul id="contacts">
+                        <!-- <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Um</p>
+                        </div>
+                    </li> -->
+<!--                     
+                        <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%;width: 39px; height: 35px;"></i>
+                            <div class="nameNumberTogether">
+                                <p class="name">Vikas</p>
+                            </div>
+                        </li>
+                        <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Ma</p>
+                        </div>
+                    </li>
+                        <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%;width: 39px; height: 35px;"></i>
+                            <div class="nameNumberTogether">
+                            <p class="name">Umesh</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Varun</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Amaan</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Rishi</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Jeevesh</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Manas</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Papa</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Suraj</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Mumi</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                    <div class="nameNumberTogether">
+                        <p class="name">Ma</p>
+                    </div>
+                </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Papsa</p>
+                        </div>
+                    </li>
+
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%;width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">/</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                        style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%;width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">a</p>
+                        </div>
+                    </li>
+                    
+                 -->
+                 <!-- <li class="number"><i class="far fa-2x fa-user-circle"
+                    style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%;width: 39px; height: 35px;"></i>
+                <div class="nameNumberTogether">
+                    <p class="name">Umesh <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                    <p class="contactNumber">9004640076</p>
+                </div>
+            </li> -->
+            </div>
+
+            <!-- list of recent call activity -->
+            <div id="recentlist">
+                <ul id="history">
+                    <!-- <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%;width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Vikas <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9082816539</p>
+                        </div>
+                        
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%;width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Umesh <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9004640076</p>
+                        </div>
+                    </li> -->
+                    <!-- <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Manas <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9045378214</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Amaan <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9232766425</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Rishi <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9002663589</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Jeevesh <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">7724892917</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Varun <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9800215175</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Suraj <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9082834646</p>
+                        </div>
+                    </li>
+                    <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Papa <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9167235118</p>
+                        </div>
+                    </li>
+                    <!-- <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Mumi <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9004640076</p>
+                        </div>
+                    </li> -->
+                    <!-- <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">Papsa <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9096674532</p>
+                        </div>
+                    </li> -->
+                    <!-- <li class="number"><i class="far fa-2x fa-user-circle"
+                            style="color: rgb(195, 195, 197);background-color: #998b8b;border-radius: 100%; width: 39px; height: 35px;"></i>
+                        <div class="nameNumberTogether">
+                            <p class="name">9086338954 <button class="callbtn1"> <i class="fas fa-phone-alt"> </i> </button></p>
+                            <p class="contactNumber">9086338954</p>
+                        </div>
+                    </li>  -->
+                </ul>
+
+
+            </div>
+
+            
+
+            <button id="dialbtn"> <img src="dial.png" alt=""></button>
+            <button id="addcntct"><i class="fas fa-plus-circle fa-3x" style="background-color: #757070;color: yellow ;border-radius: 50%;"></i></button>
+
+            <ul id="dialerpad">
+                <!-- here number will display when user will click on any number of a dialpad -->
+
+                <div id="row0">
+
+                    <input type="text" name="" id="clickedNumber">
+                    <button id="backspace"><i class="fas fa-backspace" style="color: #b59e9e;"></i></button> 
+                </div>
+
+                <div id="row1">
+
+                    <li class="key"><strong>1</strong></li>
+                    <li class="key"><strong>2</strong></li>
+                    <li class="key"><strong>3</strong></li>
+                </div>
+
+                <div id="row2">
+
+                    <li class="key"><strong>4</strong></li>
+                    <li class="key"><strong>5</strong></li>
+                    <li class="key"><strong>6</strong></li>
+                </div>
+
+                <div id="row3">
+
+                    <li class="key"><strong>7</strong></li>
+                    <li class="key"><strong>8</strong></li>
+                    <li class="key"><strong>9</strong></li>
+                </div>
+
+                <div id="row4">
+
+                    <li class="key"><strong>*</strong></li>
+                    <li class="key"><strong>0</strong></li>
+                    <li class="key"><strong>#</strong></li>
+                </div>
+
+                <div id="row5">
+
+                    <li class="key"><i class="fas fa-bars fa-xs" style="color: #998b8b;padding-top: 15px;"></i></li>
+                    <li class="key"><button id="sim1"> Simcard1</button><button id="sim2">Simcard2</button></li>
+                </div>
+
+            </ul>
+
+
+
+        </div>
+
+        <div id="addcntctpage">
+
+            
+
+            <div id="form">
+                <form action="" id='cntctform'>
+                    <div id="submit1">
+                       
+
+                           <i id='x' class="fas fa-times" style="color: aquamarine;font-size: 30px;"></i>
+                        <p>Save to Contact</p>
+
+
+                            <i id="yes" class="fas fa-check"  style="color: aquamarine;font-size: 30px;"></i>
+                        
+
+                    </div>
+                        
+                    <div id="userphoto">
+                        <i id='usericon' class="far fa-4x fa-user-circle" style="color: rgb(195, 195, 197);background-color: #3d3838;border-radius: 50%; width:60px; height: 60px;"></i>
+                    </div>
+                    <div id="takingcntctdetails">
+
+                        <input type="text" id="name1"  value='' placeholder="Name">
+
+                        <div id="Titlecompany">
+                            <input type="text" id="company" value='' placeholder="Company">
+                            <input type="text" id="Title" value='' placeholder="Title">
+                        </div>
+
+                        <div id="mobi" >
+                            <label for="mobile" class="mob">
+                                mobile
+                            </label>
+                            <input type="text" id="mobile"  value='' placeholder="Mobile" style="width: 330px;">
+                        </div>
+                        <div id="tel">
+                            <label for="work">
+                                work
+                            </label>
+                            <input type="text" id="work" value='' placeholder="email" style="width: 330px;">
+                        </div>
+                    </div>
+                
+                    
+                </form>
+            </div>
+
+        </div>
+
+        <div id="call">
+            <div id="usericoncallpg">
+                <span id="contacticon">
+
+                    <i   class="fa-4x fas fa-user" style="color: rgb(212 212 214);border-radius: 50%; width:60px; height: 60px;"></i>
+                </span>
+                <p id="callName"> Mumi</p>
+                <p id="callNum"> <i class="fas fa-sim-card fa-xs" style="padding-right: 6px;"></i> 9004640076 | India</p>
+                 <p id="status">DIALLING</p>
+
+                 <div id="bottom">
+                    <div id="layer1">
+                        <i id="video" class="fas fa-video fa-2x" style="color: wheat; margin-right: 18px;cursor: pointer;"></i>
+                        <i id="addcall" class="fas fa-plus fa-2x" style="color: wheat; margin-right: 90px;margin-left: 70px;cursor: pointer;"></i>
+                        <i id="note" class="far fa-sticky-note fa-2x" style="color: wheat;cursor: pointer;"></i>
+                    </div>
+                    <div id="layer2">
+                        <div>
+
+                            
+                            <i  id="mute" class='fas fa-microphone fa-2x' style='color:wheat ;margin-left: 9px; margin-right: 22px;cursor: pointer; ' ></i>
+                            <i id="unmute" class="fas fa-microphone-slash fa-2x" style="color: rgb(88 88 160); margin-right: 13px;cursor: pointer; display: none;" ></i>
+                        </div>
+                        
+                        
+                       
+                        <i id="hold" class="far fa-pause-circle fa-2x" style="color: wheat; margin-right: 85px;margin-left: 70px;cursor: pointer;"></i>
+                        <span id="record"><i class="fas fa-voicemail fa-lx" style="color: wheat;padding: 2px 2px 4px 0px;"></i></span>
+
+                    </div>
+                    <div id="layer3">
+                        
+                        <i id="normal" class="fas fa-volume-mute fa-2x" style="display: none;  color: wheat;margin-left: 5px;margin-top: 12px; margin-right: 4px; cursor: pointer;"></i>
+                        <i id="speaker" class="fas fa-volume-up fa-2x" style=" color: wheat;margin-left: 5px;margin-top: 12px; cursor: pointer;"></i>
+                        <span  id="endcall"><img src="end-call.png" alt="" style="width: 40px;height: 30px;margin-left: 13px;margin-top: 14px;"></span>
+                        <i class="fas fa-th fa-2x" style="color: wheat;margin-top: 12px;cursor: pointer;"></i> 
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            
+    
+        </div>
+
+            
+    
+        </div>
+
+
+
+
+    </div>
+    <script src="phone.js"></script>
+</body>
+
+</html>

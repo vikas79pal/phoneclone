@@ -1,0 +1,739 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#wholepage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: antiquewhite;
+    width: 100%;
+    height: 693px;
+}
+/* app */
+#contactpg{
+    /* display: flex; */
+    width: 400px;
+    height: 570px;
+    background-color: rgb(21 20 20);
+    border-radius: 36px;
+    /* display: none; */
+}
+
+/* nav bar */
+.nav{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 5px;
+}
+#recentcalls{
+    
+    background-color:lightblue;
+    margin: 6px 20px;
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+    
+    border: none;
+}
+#contact{
+    background-color:black ;
+    margin: 6px 20px;
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    
+}
+button{
+    outline-color: none;
+}
+#setting{
+    background-color: black;
+    margin: 6px 20px;
+    width: 25px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+/* contact search */
+
+#contactsearch{
+    display: flex;
+justify-content: center;
+
+}
+
+
+
+#contactsearch input[type='text']{
+    width: 300px;
+    height: 25px;
+   border: wheat;
+   background-color: rgb(71, 60, 60);
+   outline: none;
+   color: white;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+#contactbtn{
+    width:350px ;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgb(71, 60, 60);
+    border-color:rgb(71, 60, 60) ;
+    border-right: black;
+    border-bottom: black;
+    padding-bottom: 2px;
+}
+
+/* list of recents number */
+
+#recentlist{
+    margin: 8px;
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    
+}
+::-webkit-scrollbar{
+   display: none;
+  
+}
+
+#history{
+    padding-left: 9px;
+    margin: 1px;
+}
+
+li{
+    display: flex;
+    /* flex-direction: column; */
+    list-style: none;
+    padding-top: 4px;
+    padding-left:10px ;
+    padding-bottom: 15px;
+    color: rgb(245, 227, 227);
+    font-weight: bolder;
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    
+    
+}
+li p{
+    padding-left: 10px;
+    width: 300px;
+    padding-top: 4px;
+    font-size: 24px;
+}
+
+
+
+.callbtn1{
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* display: inline; */
+    cursor: pointer;
+    background-color: rgb(170 220 82);
+    border: none;
+}
+/* dial btn design */
+
+#dialbtn{
+    cursor: pointer;
+    position: relative;
+    float: right;
+    right: 31px;
+    bottom: 69px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(94, 94, 84);
+    border-color: rgb(94, 94, 84);
+    z-index: 2;
+    border: none;
+}
+
+#dialbtn img{
+    padding-top: 7px;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+/* dialer btn */
+
+#dialerpad{
+    background-color:#5a5a56;
+    z-index: -1;
+    position: relative; 
+     bottom: 223px;
+     /* (above) if not clicked on dial pad */
+     /* bottom: 248px; */
+     /* (above) if clicked on dial pad */
+     margin-left:1px ;
+     margin-right: 1px;
+     border-top-left-radius: 15px;
+     border-top-right-radius: 15px;
+     width: 398px;
+     height: 215px;
+     /* (above) if not clicked */
+
+     /* width: 398px; */
+     /* height: 240px; */
+      /*if clicked on dial btn (above)  */
+     /* height:250px ; */ 
+     border-bottom-left-radius: 36px;
+     border-bottom-right-radius: 36px;
+    padding-bottom: 0px;
+}
+
+
+
+#row1{
+    
+    /* position: relative; */
+    /* bottom: 250px; */
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 20%;
+    margin-right: 0%;
+    z-index: -1;
+    /* border:7px solid black; */
+    /* border-radius: 50%; */
+}
+#row1 .key{
+    cursor: pointer;
+    background-color: rgb(90, 90, 86);
+    border-radius: 2px;
+    /* padding: 15px; */
+    font-size: 30px;
+    width: 100px;
+    height: 15px;
+}
+
+#row2{
+    display: flex;
+    /* position: relative; */
+    /* bottom: 245px; */
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 10%;
+    z-index: 1;
+    /* border:7px solid black; */
+    /* border-radius: 50%; */
+}
+#row2 .key{
+    cursor: pointer;
+    background-color: rgb(90, 90, 86);
+    border-radius: 2px;
+    font-size: 30px;
+    width: 100px;
+    height: 15px;
+}
+
+#row3{
+    display: flex;
+    /* position: relative; */
+    /* bottom: 230px; */
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 10%;
+    /* z-index: 0; */
+    /* border:7px solid black; */
+    /* border-radius: 50%; */
+}
+#row3 .key{
+    cursor: pointer;
+    background-color: rgb(90, 90, 86);
+    border-radius: 2px;
+    font-size: 30px;
+    width: 100px;
+    height: 15px;
+}
+
+#row4{
+    display: flex;
+    /* position: relative; */
+    /* bottom: 220px; */
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 10%;
+    /* z-index: 1; */
+    /* border:7px solid black; */
+    /* border-radius: 50%; */
+}
+#row4 .key{
+    cursor: pointer;
+    background-color: rgb(90, 90, 86);
+    border-radius: 2px;
+    font-size: 30px;
+    width: 100px;
+    height: 15px;
+}
+
+#row5{
+    display: flex;
+    /* position: relative; */
+    /* bottom: 220px; */
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 10%;
+    /* z-index: 1; */
+    /* border:7px solid black; */
+    /* border-radius: 50%; */
+}
+#row5 .key{
+    background-color: rgb(90, 90, 86);
+    cursor: pointer;
+   display: flex;
+    border-radius: 2px;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    
+}
+#row5 .key #menu{
+    padding-top: px;
+    width: 100px;
+    height: 30px;
+    outline: none;
+}
+#row5 .key button{
+    width: 100px;
+    height: 24px;
+}
+#sim1{
+    width: 10px;
+    background-color:rgb(240, 240, 143) ;
+    margin-top: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    cursor: pointer;
+}
+#sim2{
+    width: 0px;
+    height: 30px;
+    background-color:rgb(240, 240, 143) ;
+    margin-top: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+/* persons name with their respective contact number */
+
+.name{
+    font-size: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.contactNumber{
+    padding-left: 12px;
+    padding-top: 2px;
+    margin-top: -4px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+#clickedNumber{
+    /* width: 100%; */
+    margin-left: 2px;
+
+}
+
+#row0{
+    
+    /* position: relative; */
+    /* bottom: 250px; */
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 15%;
+    height: 30px;
+    margin-right: 2%;
+    z-index: -1;
+    /* border:7px solid black; */
+    /* border-radius: 50%; */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    display: none;
+}
+
+
+#row0 input{
+    /* bottom: 268px;
+    right: 550px; */
+
+    background-color:rgb(90, 90, 86) ;
+    width:  87% ;
+    height: 30px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    margin: 0px;
+    color: rgb(241, 186, 44);
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 3px;
+    border: none;
+    outline: none;
+    
+    
+}   
+#backspace{
+    border: none;
+    outline: none;
+    background-color:rgb(90, 90, 86) ;
+    cursor: pointer;
+}
+
+/* contact list */
+
+#contactlist{
+    margin: 8px;
+    margin-left: 18px;
+    margin-top: 9px;
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 10;
+    display: none;
+    /* overflow-y: hidden; */
+    /* display: none; */
+    
+
+}
+
+#addcntct{
+    position: relative;
+    float: right;
+    right: -14px;
+    bottom: 69px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(94, 94, 84);
+    border-color: rgb(94, 94, 84);
+    z-index: 4;
+    display: none;
+    outline: none;
+    border: none;
+
+}
+
+
+#contactpgsearch{
+    display: flex;
+justify-content: center;
+/* z-index: 3; */
+display: none;
+
+}
+
+
+
+#contactpgsearch input[type='text']{
+    width: 300px;
+    height: 25px;
+   border: wheat;
+   background-color: rgb(71, 60, 60);
+   outline: none;
+   color: white;
+   font-size: 18px;
+   font-weight: bold;
+}
+
+
+
+#contactpgbtn{
+    width:350px ;
+    height: 35px;
+    border-radius: 20px;
+    background-color: rgb(71, 60, 60);
+    border-color:rgb(71, 60, 60) ;
+    border-right: black;
+    border-bottom: black;
+    padding-bottom: 2px;
+}
+
+
+/* adding new contact number into the list */
+
+#addcntctpage{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 570px;
+    background-color: rgb(21 20 20);
+    border-radius: 36px;
+    z-index: 4;
+    display: none;
+}
+#userphoto{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+#form{
+    display: flex;
+    justify-content: center;
+    /* display: none; */
+}
+#submit1{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+#takingcntctdetails{
+    /* display: flex; */
+    margin-top: 10px;
+    width: 398px;
+}
+#takingcntctdetails input{
+    width: 393px;
+    margin: 2px -1px;
+    height: 30px;
+    /* border-radius: 10px; */
+    padding-left: 1px;
+    outline: none;
+    background-color: #20201c;
+    color: whitesmoke;
+    font-size: 19px;
+    border: none;
+    border-radius: 6px;
+    
+
+}
+#takingcntctdetails input:focus{
+    border-radius: 10px;
+    /* border-width: 3px;
+    border-color: blueviolet; */
+    border: 1px solid blueviolet;
+
+    background-color: #20201c;
+}
+::placeholder{
+    font-size: 18px;
+    color: rgb(30, 219, 219);
+    padding-left: 5px;
+}
+#usericon{
+    margin-top: 3px;
+
+}
+
+#submit1 p{
+    font-size: 27px;
+    color: aquamarine;
+}
+#Titlecompany{
+    border: 2px solid #20201c ;
+    background-color: #20201c;
+    /* border-color: yellow; */
+    border-radius: 10px;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+
+#Titlecompany input[type='text']{
+    width: 389px;
+    /* margin: 2px -1px; */
+    height: 30px;
+    border-radius: 10px;
+    /* padding-left: 10px; */
+    margin-left: 1px;
+    background-color: #20201c;
+    color: whitesmoke;
+    font-size: 19px;
+    /* border-color:#20201c;; */
+    border: none;
+    outline: none;
+    /* margin: 2px; */
+
+
+
+}
+
+#Titlecompany input[type='text']:focus{
+    border: none;
+}
+
+#Titlecompany:hover{
+    /* border-color: black; */
+    border: 2px solid blue ;
+    /* border: none; */
+    background-color: #20201c;
+    /* background-color: white; */
+}
+
+label{
+    font-size: 20px;
+    padding-right:20px ;
+    color: aquamarine;
+    /* margin-top: 10px; */
+
+}
+.mob{
+    padding-right: 6px;
+    width: 200px;
+    /* margin-left: 0px; */
+}
+
+#name1:hover{
+    border: 2px solid blue ;
+}
+
+#mobi{
+    /* width: 0px; */
+    background-color: #20201c;
+    margin-bottom: 4px;
+    border-radius: 5px;
+}
+#tel{
+    background-color: #20201c;
+    border-radius: 5px;
+}
+
+
+
+
+/* call page */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* #outside{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: aqua;
+    height: 693px;
+    width: 100%;
+    
+} */
+#call{
+    justify-content: center;
+    width: 400px;
+    height: 570px;
+    display: flex;
+    border-radius: 36px;
+    /* align-content: center; */
+    /* background-image: radial-gradient(circle at 21.01% 100.21%, #ffdcce 0, #ffd2d0 10%, #ffc6cf 20%, #ffb9cc 30%, #ffacc4 40%, #f29db9 50%, #d48fac 60%, #ba83a0 70%, #a37894 80%, #906f8a 90%, #816881 100%); */
+    background-image: radial-gradient(circle at 56.16% -20.44%, #ffbbcc 0, #ffb2c8 16.67%, #ffa8c1 33.33%, #f29db9 50%, #dc93b0 66.67%, #c889a7 83.33%, #b6819e 100%);
+    display: none;
+}
+
+#contacticon{
+    width: 97px;
+    height: 89px;
+    background-color: #a29393;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+#usericoncallpg{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* border: 1px solid; */
+    align-content: center;
+    align-items: center;
+    
+}
+#contacticon i{
+    margin-top: 8px;
+    margin-right: 9px;
+    margin-left: 20px;
+    
+    
+}
+#callName{
+ font-size: 30px;
+ color: rgb(234 222 222);
+ font-weight: lighter; 
+ font-family: 'Roboto', sans-serif;  
+}
+#callNum{
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgb(234 222 222);
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+
+}
+#status{
+    margin-top: 5px;
+    font-size: 20px;
+    color: rgb(234 222 222);
+    font-weight: lighter; 
+    font-family: 'Roboto', sans-serif;        
+}
+#bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 120px;
+}
+#layer1{
+    display: flex;
+    margin-bottom:30px;
+
+}
+#layer2{
+    display: flex;
+    margin-bottom:20px;
+}
+#layer3{
+    display: flex;
+    margin-top: 15px;
+}
+#endcall{
+    width: 65px;
+    height: 60px;
+    background-color: red;
+    border-radius: 50%;
+    margin-right: 70px;
+    margin-left: 65px;
+    cursor: pointer;
+}
+#record{
+    width: 25px;
+    height: 23px;
+    border: 4px solid wheat;
+    border-radius: 3px;
+    cursor: pointer;
+    
+    
+
+
+}
+#record i{
+transform: rotate(180deg);
+align-items: center;
+}
+
+
+
+
+
